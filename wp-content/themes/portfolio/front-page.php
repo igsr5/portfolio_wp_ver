@@ -12,7 +12,7 @@
             <i class="fas fa-user-alt title_icon"></i>
             <h2><?php the_title(); ?></h2>
             <div class="row">
-                <div class="col-sm-4 d-flex align-item-center about_image"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/photo/my_photo.jpg" width="100%" alt=""></div>
+                <div class="col-sm-4 d-flex align-item-center about_image"><?php the_post_thumbnail(); ?></div>
                 <div class="col-sm-7 offset-sm-1 about_status">
                     <div class="name_title">
                         <p>市古空/ICHIGO SORA</p>
@@ -20,18 +20,11 @@
                     </div>
                     <?php
                     wp_reset_postdata();
-                    $args = array(
-                        'post_parent' => $post->ID,
-                        'post_status' => 'publish',
-                        'post_type'   => 'page',
-                        'order'=>'ASC',
-                        );
-                        $children_array = new WP_Query($args);
+                    $children_array = get_child_pages($post);
                         while($children_array->have_posts()):
                             $children_array->the_post();
                             $content=get_the_content();
-                            $content=wp_strip_all_tags($content);
-                            $content=strip_shortcodes($content);
+                            $content=remove_ptag($content);
                     ?>
                     <div class="status_item">
                         <p><?php the_title(); ?>：<?php echo $content; ?></p>

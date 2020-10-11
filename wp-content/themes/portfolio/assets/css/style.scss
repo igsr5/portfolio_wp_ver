@@ -401,6 +401,8 @@ header {
         @include title;
     }
     img {
+        width: 100%;
+        height: auto;
         margin: auto;
         border-radius: 50%;
     }
