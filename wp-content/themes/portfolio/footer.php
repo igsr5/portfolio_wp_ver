@@ -1,9 +1,9 @@
-<!--フッター-->
+<!--繝輔ャ繧ｿ繝ｼ-->
 <footer>
-        <p>?SORA ICHIGO 2020</p>
+        <p>@SORA ICHIGO 2020</p>
     </footer>
 
-    <!--スクロールボタン-->
+    <!--繧ｹ繧ｯ繝ｭ繝ｼ繝ｫ繝懊ち繝ｳ-->
     <div class="scroll_button">
         <i class="fas fa-chevron-circle-up"></i>
     </div>
@@ -26,18 +26,18 @@
     <!-- wow.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
-    <!--自作JavaScript-->
+    <!--閾ｪ菴廱avaScript-->
     <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/js/drower_slide.js"></script>
     <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/js/scroll.js"></script>
     <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/js/form.js"></script>
     <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/js/animate.js"></script>
 
-    <!--lagyload用-->
+    <!--lagyload逕ｨ-->
     <script>
         lazyload();
     </script>
 
-    <!-- wow.js用 -->
+    <!-- wow.js逕ｨ -->
     <script>
         new WOW({
             mobile: false

@@ -43,4 +43,7 @@ function posts_where_feeling($where) {
 	}
 	return $where;
 };
+//   固定ページサムネイル追加
+  add_theme_support( 'post-thumbnails');
+
 ?>

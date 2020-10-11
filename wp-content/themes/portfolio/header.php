@@ -30,7 +30,7 @@
 
 <body>
 
-    <!--ヘッダー-->
+    <!--繝倥ャ繝繝ｼ-->
     <header class="d-none d-md-block">
         <div class="container">
             <div class="row d-none d-md-flex">
@@ -46,7 +46,7 @@
         </div>
     </header>
 
-    <!--ナビゲーションメニュー-->
+    <!--繝翫ン繧ｲ繝ｼ繧ｷ繝ｧ繝ｳ繝｡繝九Η繝ｼ-->
     <div class="navi_menu d-block d-md-none">
         <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
         <label for="openSidebarMenu" class="sidebarIconToggle">
@@ -56,7 +56,7 @@
         </label>
     </div>
 
-    <!-- スライドメニュー部分-->
+    <!-- 繧ｹ繝ｩ繧､繝峨Γ繝九Η繝ｼ驛ｨ蛻�-->
     <nav id="slide_menu">
         <ul>
             <li class="skip_top">top</li>
@@ -67,7 +67,7 @@
         </ul>
     </nav>
 
-    <!--ヒーローイメージ-->
+    <!--繝偵�ｼ繝ｭ繝ｼ繧､繝｡繝ｼ繧ｸ-->
     <div class="hero">
         <div>
             <h1>Welcome to my portfolio!!</h1>

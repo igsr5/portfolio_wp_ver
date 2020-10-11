@@ -2,10 +2,15 @@
 
 
     <!--自己紹介-->
+    <?php
+    $page_data=get_page_by_path('about-me');
+    $post=$page_data;
+    setup_postdata($post);
+    ?>
     <div class="about">
         <div class="container">
             <i class="fas fa-user-alt title_icon"></i>
-            <h2>about me</h2>
+            <h2><?php the_title(); ?></h2>
             <div class="row">
                 <div class="col-sm-4 d-flex align-item-center about_image"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/photo/my_photo.jpg" width="100%" alt=""></div>
                 <div class="col-sm-7 offset-sm-1 about_status">
@@ -31,7 +36,7 @@
             <p class="btn-box skip_skill">What's skill?</p>
         </div>
     </div>
-
+    <?php wp_reset_postdata(); ?>
     <!--スキル-->
     <div class="skill">
         <div class="container">
