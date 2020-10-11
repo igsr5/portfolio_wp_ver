@@ -1,0 +1,190 @@
+# Translation of Themes - Builders Landing Page in Japanese
+# This file is distributed under the same license as the Themes - Builders Landing Page package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2020-06-11 02:31:11+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/3.0.0-alpha\n"
+"Language: ja_JP\n"
+"Project-Id-Version: Themes - Builders Landing Page\n"
+
+#. Theme Name of the theme
+msgid "Builders Landing Page"
+msgstr "Builders Landing Page"
+
+#: footer.php:53
+msgid "&copy; Copyright "
+msgstr "&copy; Copyright "
+
+#: inc/child-functions.php:67 inc/child-functions.php:225
+#: inc/parent-functions.php:7 inc/parent-functions.php:90
+msgid "Email"
+msgstr "メール"
+
+#: inc/child-functions.php:59
+msgid "Email Address"
+msgstr "メールアドレス"
+
+#: inc/child-functions.php:118
+msgid "Enable Social Links"
+msgstr "ソーシャルリンクを有効化"
+
+#: inc/child-functions.php:119
+msgid "Enable to show social links at header."
+msgstr "ヘッダーにソーシャルリンクを表示するには有効化してください。"
+
+#: inc/child-functions.php:148
+msgid "Example: fa-bell"
+msgstr "例: fa-bell"
+
+#: inc/child-functions.php:153
+msgid "Example: http://facebook.com"
+msgstr "例: http://facebook.com"
+
+#: inc/child-functions.php:147
+msgid "Font Awesome Icon"
+msgstr "Font Awesome アイコン"
+
+#: inc/custom-controls/repeater/class-control-repeater.php:376
+msgid "Hex Value"
+msgstr "16進値"
+
+#: inc/custom-controls/repeater/class-control-repeater.php:244
+msgid "Limit: %s rows"
+msgstr "上限: %s行"
+
+#: inc/child-functions.php:152
+msgid "Link"
+msgstr "リンク"
+
+#: inc/child-functions.php:24 inc/child-functions.php:233
+#: inc/parent-functions.php:6 inc/parent-functions.php:89
+msgid "Phone Number"
+msgstr "電話番号"
+
+#: inc/parent-functions.php:173
+msgid "Rate this theme"
+msgstr "このテーマを評価する"
+
+#: sections/portfolio.php:49
+msgid "Read More"
+msgstr "続きを読む"
+
+#: inc/child-functions.php:143
+msgid "Social Links"
+msgstr "ソーシャルリンク"
+
+#: inc/parent-functions.php:172
+msgid "Support Ticket"
+msgstr "サポートチケット"
+
+#: inc/parent-functions.php:170
+msgid "Theme Demo"
+msgstr "テーマデモ"
+
+#: footer.php:63
+msgid "WordPress"
+msgstr "WordPress"
+
+#: footer.php:53
+msgid "Y"
+msgstr "Y年"
+
+#: inc/parent-functions.php:169 inc/parent-functions.php:170
+#: inc/parent-functions.php:171 inc/parent-functions.php:172
+#: inc/parent-functions.php:173
+msgid "here"
+msgstr "こちら"
+
+#: footer.php:63
+msgid "https://wordpress.org/"
+msgstr "https://ja.wordpress.org/"
+
+#: inc/child-functions.php:158
+msgid "links"
+msgstr "リンク"
+
+#: inc/custom-controls/repeater/class-control-repeater.php:74
+msgid "row"
+msgstr "行"
+
+#: inc/parent-functions.php:171
+msgid "Theme Info"
+msgstr "テーマ情報"
+
+#: inc/parent-functions.php:169
+msgid "Theme Documentation"
+msgstr "テーマドキュメンテーション"
+
+#: inc/parent-functions.php:159
+msgid "Demo and Documentation"
+msgstr "デモとドキュメンテーション"
+
+#: inc/child-functions.php:48 inc/parent-functions.php:9
+#: inc/parent-functions.php:92
+msgid "constructio@xyz.com"
+msgstr "constructio@xyz.com"
+
+#: footer.php:62
+msgid "Powered by "
+msgstr "powered by"
+
+#: footer.php:58
+msgid "Builders Landing Page | Developed By "
+msgstr "Builders Landing Page | Developed By "
+
+#: inc/child-functions.php:274 inc/child-functions.php:277
+msgid "View More Projects"
+msgstr "さらにプロジェクトを表示"
+
+#: inc/parent-functions.php:192
+msgid "Choose Post/Page"
+msgstr "投稿/固定ページを選択"
+
+#: inc/child-functions.php:271
+msgid "More About Us"
+msgstr "私たちについてさらに詳しく"
+
+#: inc/child-functions.php:203
+msgid "Select Post/Page Six"
+msgstr "投稿/固定ページを選択 (6)"
+
+#: inc/child-functions.php:185
+msgid "Select Post/Page Five"
+msgstr "投稿/固定ページを選択 (5)"
+
+#: inc/child-functions.php:40
+msgid "Phone # Label"
+msgstr "電話番号ラベル"
+
+#: inc/child-functions.php:83
+msgid "Email # Label"
+msgstr "メール番号ラベル"
+
+#: inc/child-functions.php:101
+msgid "Button link for Get A Quote"
+msgstr "「見積もりを取得」ボタンリンク"
+
+#: inc/custom-controls/repeater/class-control-repeater.php:82
+msgid "Add new %s"
+msgstr "新規%sを追加"
+
+#: inc/child-functions.php:102
+msgid "You can find this in the end of navigation menu.."
+msgstr "これはナビゲーションメニューの最後にあります。"
+
+#. Author of the theme
+#: footer.php:60
+msgid "Rara Theme"
+msgstr "Rara Theme"
+
+#. Author URI of the theme
+msgid "https://rarathemes.com/"
+msgstr "https://rarathemes.com/"
+
+#. Theme URI of the theme
+msgid "https://rarathemes.com/wordpress-themes/builders-landing-page/"
+msgstr "https://rarathemes.com/wordpress-themes/builders-landing-page/"
