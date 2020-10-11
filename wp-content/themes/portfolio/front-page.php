@@ -18,18 +18,25 @@
                         <p>市古空/ICHIGO SORA</p>
                         <a href="https://twitter.com/nira_22222"><i class="fab fa-twitter-square"></i></a>
                     </div>
-                    <div class="status_item first_item">
-                        <p>出身：愛知県(現在も在住)</p>
-                    </div>
+                    <?php
+                    wp_reset_postdata();
+                    $args = array(
+                        'post_parent' => $post->ID,
+                        'post_status' => 'publish',
+                        'post_type'   => 'page',
+                        'order'=>'ASC',
+                        );
+                        $children_array = new WP_Query($args);
+                        while($children_array->have_posts()):
+                            $children_array->the_post();
+                            $content=get_the_content();
+                            $content=wp_strip_all_tags($content);
+                            $content=strip_shortcodes($content);
+                    ?>
                     <div class="status_item">
-                        <p>所属：豊田工業高等専門学校　情報工学科</p>
+                        <p><?php the_title(); ?>：<?php echo $content; ?></p>
                     </div>
-                    <div class="status_item">
-                        <p>活動：学校にて情報工学を専攻する傍ら、独学でWebについて勉強、制作している。</p>
-                    </div>
-                    <div class="status_item">
-                        <p>その他：フロントエンド周りの実装を主にしている。プログラミング自体が好きなので趣味としてPHP,Java,Cなども触ったりする。</p>
-                    </div>
+                    <?php endwhile; ?>
                 </div>
             </div>
 

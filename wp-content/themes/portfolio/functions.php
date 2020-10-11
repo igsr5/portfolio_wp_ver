@@ -45,5 +45,4 @@ function posts_where_feeling($where) {
 };
 //   固定ページサムネイル追加
   add_theme_support( 'post-thumbnails');
-
 ?>
