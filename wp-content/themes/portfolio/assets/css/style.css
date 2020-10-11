@@ -433,16 +433,14 @@ header ul li:hover {
 
 .about .status_item {
   border-bottom: 1px solid #888888;
+  border-top: 1px solid #888888;
+  margin: -1px 0;
   padding: 10px 0;
 }
 
 .about .status_item p {
   font-family: "Noto Sans JP", sans-serif;
   margin: 0;
-}
-
-.about .status_item:first-child {
-  border-top: 1px solid #888888;
 }
 
 /*===========================================================*/
