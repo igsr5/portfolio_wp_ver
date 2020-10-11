@@ -43,7 +43,7 @@
                     <li class="skip_about">about</li>
                     <li class="skip_skill">skill</li>
                     <li class="skip_works">works</li>
-                    <li class=""><a href='<?php the_permalink($contact_post_data->ID); ?>'>contact</a></li>
+                    <li><a href='<?php the_permalink($contact_post_data->ID); ?>'>contact</a></li>
                 </ul>
             </div>
         </div>
@@ -66,7 +66,7 @@
             <li class="skip_about">about</li>
             <li class="skip_skill">skill</li>
             <li class="skip_works">works</li>
-            <li class="skip_contact">contact</li>
+            <li><a href='<?php the_permalink($contact_post_data->ID); ?>'>contact</a></li>
         </ul>
     </nav>
     <?php wp_reset_postdata(); ?>

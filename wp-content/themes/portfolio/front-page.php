@@ -153,14 +153,6 @@
                 <p>些細なことでも構いませんのでまずはお問い合わせください！！</p>
                 <p><a href="https://twitter.com/nira_22222"><i class="fab fa-twitter"></i></a></p>
             </div>
-            <!-- <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="onLoad()"></iframe>
-            <form class="form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSc6o8KSIama2g-D50FR8CcndL1lYjhWhWuRZfVo5_RF1Jc_UA/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true">
-                <p><input class="form-control" type="text" name="entry.2005620554" placeholder="お名前" v-model="name"></p>
-                <p><input class="form-control" type="email" name="entry.1045781291" placeholder="メールアドレス" v-model="e_mail"></p>
-                <p><textarea class="form-control" name="entry.839337160" rows="5" cols="30" placeholder="お問い合わせ内容" v-model="content"></textarea></p>
-                <p><button :disabled="isSubmit()" type="submit" name="submit" class="btn btn-info">送信</button></p>
-            </form>
-            <p id="success" style="display: none">送信が完了しました。お問い合わせ、ありがとうございました。</p> -->
 
             <a href='<?php the_permalink(); ?>'><p class="btn-box contact-us">Contact us</p></a>
         </div>
