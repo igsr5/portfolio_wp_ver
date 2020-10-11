@@ -131,35 +131,6 @@
             </div>
         </div>
 
-        <div class="modal fade" id="flower_modal" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <img class="lazyload" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/site/flower_full.png" width="100%" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal fade" id="matukaze_modal" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <img class="lazyload" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/site/matukaze_full.png" width="100%" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal fade" id="yoga_modal" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <img class="lazyload" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/site/zen_place_yoga_full.png" width="100%" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 
 
@@ -177,18 +148,17 @@
             <i class="far fa-envelope title_icon"></i>
             <h2><?php the_title(); ?></h2>
             <div>
-                <?php the_content(); ?>
+                <p>基本的にご記入いただいた連絡先に24時間以内にこちらからご連絡いたします。</p>
+                <p>また、お問い合わせは下記SNSアカウントからもお待ちしております。</p>
+                <p>些細なことでも構いませんのでまずはお問い合わせください！！</p>
                 <p><a href="https://twitter.com/nira_22222"><i class="fab fa-twitter"></i></a></p>
             </div>
-            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="onLoad()"></iframe>
-            <form class="form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSc6o8KSIama2g-D50FR8CcndL1lYjhWhWuRZfVo5_RF1Jc_UA/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true">
-                <p><input class="form-control" type="text" name="entry.2005620554" placeholder="お名前" v-model="name"></p>
-                <p><input class="form-control" type="email" name="entry.1045781291" placeholder="メールアドレス" v-model="e_mail"></p>
-                <p><textarea class="form-control" name="entry.839337160" rows="5" cols="30" placeholder="お問い合わせ内容" v-model="content"></textarea></p>
-                <p><button :disabled="isSubmit()" type="submit" name="submit" class="btn btn-info">送信</button></p>
-            </form>
-            <p id="success" style="display: none">送信が完了しました。お問い合わせ、ありがとうございました。</p>
+
+            <a href='<?php the_permalink(); ?>'><p class="btn-box contact-us">Contact us</p></a>
         </div>
     </div>
 
-    <?php get_footer(); ?>
+    <?php
+    wp_reset_postdata();
+    get_footer();
+    ?>

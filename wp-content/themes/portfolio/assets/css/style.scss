@@ -160,6 +160,15 @@ body {
     }
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+    &:hover {
+        color: inherit;
+        text-decoration: none;
+    }
+}
+
 @mixin container {
     padding: 30px 0;
     border-bottom: 1px solid #888888;
@@ -377,6 +386,11 @@ header {
         }
         ;
     }
+}
+
+.contact-hero {
+    background-image: url("../img/background/hero_back_contct.jpg"); // background-size: cover;
+    height: 40%;
 }
 
 
@@ -693,7 +707,7 @@ header {
         @include container;
         border: none;
         div {
-            margin-bottom: 40px;
+            margin-bottom: 20px;
             p {
                 font: {
                     family: $jp-title-font;
