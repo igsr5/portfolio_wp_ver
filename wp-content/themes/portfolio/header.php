@@ -29,18 +29,21 @@
 </head>
 
 <body>
+    <?php
+    $contact_page_data=get_page_by_path('contact');
+    ?>
 
     <!--ヘッダー-->
     <header class="d-none d-md-block">
         <div class="container">
             <div class="row d-none d-md-flex">
-                <h2 class="col-md-3">portfolio</h2>
+                <h2 class="col-md-3"><a href='<?php echo home_url(); ?>'>portfolio</a></h2>
                 <ul class="col-md-7 offset-md-2 d-flex justify-content-md-between">
                     <li class="skip_top">top</li>
                     <li class="skip_about">about</li>
                     <li class="skip_skill">skill</li>
                     <li class="skip_works">works</li>
-                    <li class="skip_contact">contact</li>
+                    <li class=""><a href='<?php the_permalink($contact_post_data->ID); ?>'>contact</a></li>
                 </ul>
             </div>
         </div>
@@ -66,10 +69,20 @@
             <li class="skip_contact">contact</li>
         </ul>
     </nav>
+    <?php wp_reset_postdata(); ?>
 
     <!--ヒーローイメージ-->
+
+    <?php if(is_front_page()): ?>
     <div class="hero">
         <div>
             <h1>Welcome to my portfolio!!</h1>
         </div>
     </div>
+    <?php elseif(is_page('contact')): ?>
+        <div class="contact-hero hero">
+            <div>
+                <h1>Contact</h1>
+            </div>
+        </div>
+    <?php endif; ?>
