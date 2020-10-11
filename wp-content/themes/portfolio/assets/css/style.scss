@@ -160,6 +160,13 @@ body {
     }
 }
 
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
 @mixin container {
     padding: 30px 0;
     border-bottom: 1px solid #888888;
