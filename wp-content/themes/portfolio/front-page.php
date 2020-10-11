@@ -37,55 +37,36 @@
         </div>
     </div>
     <?php wp_reset_postdata(); ?>
+
     <!--スキル-->
+    <?php
+    $page_data=get_page_by_path('skill');
+    $post=$page_data;
+    setup_postdata($post);
+    $content=remove_ptag(get_the_content());
+    ?>
     <div class="skill">
         <div class="container">
             <i class="fas fa-code title_icon"></i>
-            <h2>skill</h2>
-            <p class="skill_text">下記の言語・ライブラリ・フレームワーク・ツールを用いた開発が可能です。</p>
+            <h2><?php the_title(); ?></h2>
+            <p class="skill_text"><?php echo $content; ?></p>
             <div class="row skill_items">
-                <div class="skill_item col-sm-3 col-6 wow animated fadeInUp-box" data-wow-delay=".1s">
+                <?php
+                wp_reset_postdata();
+                $children_array = get_child_pages($post);
+                    $i=0;
+                    while($children_array->have_posts()):
+                        $children_array->the_post();
+                        $content=remove_ptag(get_the_content());
+                        $i++;
+                ?>
+                <div class="skill_item col-sm-3 col-6 wow animated fadeInUp-box" data-wow-delay=".<?php echo $i; ?>s">
                     <div>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo/html-5.svg" alt="HTML5">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo/<?php echo $content; ?>" alt="<?php the_title(); ?>">
                     </div>
-                    <p>HTML5</p>
+                    <p><?php the_title(); ?></p>
                 </div>
-                <div class="skill_item col-sm-3 col-6 wow animated fadeInUp-box" data-wow-delay=".2s">
-                    <div>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo/css-3.svg" alt="CSS3">
-                    </div>
-                    <p>CSS3</p>
-                </div>
-                <div class="skill_item col-sm-3 col-6 wow animated fadeInUp-box" data-wow-delay=".3s">
-                    <div>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo/javascript.svg" alt="JavaScript">
-                    </div>
-                    <p>JavaScript</p>
-                </div>
-                <div class="skill_item col-sm-3 col-6 wow animated fadeInUp-box" data-wow-delay=".4s">
-                    <div>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo/bootstrap.svg" alt="Bootstrap4">
-                    </div>
-                    <p>Bootstrap4</p>
-                </div>
-                <div class="skill_item col-sm-3 col-6 wow animated fadeInUp-box" data-wow-delay=".5s">
-                    <div>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo/sass.svg" alt="SCSS">
-                    </div>
-                    <p>SCSS</p>
-                </div>
-                <div class="skill_item col-sm-3 col-6 wow animated fadeInUp-box" data-wow-delay=".6s">
-                    <div>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo/jquery.svg" alt="jQuery">
-                    </div>
-                    <p>jQuery</p>
-                </div>
-                <div class="skill_item col-sm-3 col-6 wow animated fadeInUp-box" data-wow-delay=".7s">
-                    <div>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo/wordpress.svg" alt="Vue.js">
-                    </div>
-                    <p>WordPress</p>
-                </div>
+                <?php endwhile; ?>
             </div>
             <p class="btn-box skip_works">What's works?</p>
         </div>
@@ -179,20 +160,24 @@
                 </div>
             </div>
         </div>
-
     </div>
 
 
 
     <!--お問い合わせ-->
+    <?php
+    $page_data=get_page_by_path('contact');
+    $post=$page_data;
+    setup_postdata($post);
+    $content=remove_ptag(get_the_content());
+    ?>
+    ?>
     <div class="contact">
         <div class="container">
             <i class="far fa-envelope title_icon"></i>
-            <h2>contact</h2>
+            <h2><?php the_title(); ?></h2>
             <div>
-                <p>基本的にご記入いただいた連絡先に24時間以内にこちらからご連絡いたします。</p>
-                <p>また、お問い合わせは下記SNSアカウントからもお待ちしております。</p>
-                <p>些細なことでも構いませんのでまずはお問い合わせください！！</p>
+                <?php the_content(); ?>
                 <p><a href="https://twitter.com/nira_22222"><i class="fab fa-twitter"></i></a></p>
             </div>
             <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="onLoad()"></iframe>
