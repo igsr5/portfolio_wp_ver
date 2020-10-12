@@ -88,14 +88,20 @@
                     <div class=" img_wrap">
                         <a href="https://ichigo-dev.github.io/dual_life_lp/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/site/dual_life_lp.png" alt=""></a>
                     </div>
-                    <div class=" img_wrap coming-soon">
+                    <!-- <div class=" img_wrap coming-soon">
                         <p>coming soon</p>
+                    </div> -->
+                    <div class="img_wrap">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/site/gurusupo_hero.png" alt="" data-toggle="modal" data-target="#gurusupo_modal">
                     </div>
+                </div>
+                <div class='more_works' >
+                    <a href="">もっと見る</a>
                 </div>
             </div>
 
             <!--オリジナルウェブサービス-->
-            <div class="web_service animated fadeInUp-box">
+            <!-- <div class="web_service animated fadeInUp-box">
                 <h3>オリジナルサービス</h3>
                 <div class="gurusupo row">
                     <div class="service_top col-sm-6">
@@ -114,7 +120,7 @@
                         <p><a href="https://bisquelizard14.sakura.ne.jp/" target="_blank" rel="noopener noreferrer">サイトURL</a></p>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <p class="btn-box skip_contact">To contact</p>
         </div>
 

@@ -83,6 +83,16 @@ body {
           transition-duration: 0.6s;
 }
 
+.more_works {
+  width: 90%;
+  margin: 0 auto;
+  text-align: right;
+}
+
+.more_works a {
+  color: #007bff;
+}
+
 .btn-box {
   cursor: pointer;
   display: block;
@@ -578,7 +588,7 @@ header ul li:hover {
 }
 
 .web_works {
-  margin-bottom: 60px;
+  margin-bottom: 45px;
 }
 
 .web_works h3 {
@@ -860,6 +870,9 @@ footer p {
   .modal-dialog {
     width: 80%;
     margin: 30px auto;
+  }
+  .site-items {
+    margin-bottom: 20px;
   }
   .video-dialog {
     margin: 90px auto;

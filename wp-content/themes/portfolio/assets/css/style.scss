@@ -88,6 +88,16 @@ body {
     transition-duration: 0.6s;
 }
 
+.more_works {
+    width: 90%;
+    margin: 0 auto;
+    text-align: right;
+}
+
+.more_works a {
+    color: #007bff;
+}
+
 // 共通ボタン
 .btn-box {
     cursor: pointer;
@@ -586,7 +596,7 @@ header {
         }
         ;
     }
-    margin-bottom: 60px;
+    margin-bottom: 45px;
 }
 
 .service_about {
@@ -881,6 +891,9 @@ footer {
     .modal-dialog {
         width: 80%;
         margin: 30px auto;
+    }
+    .site-items {
+        margin-bottom: 20px;
     }
     .video-dialog {
         margin: 90px auto;
