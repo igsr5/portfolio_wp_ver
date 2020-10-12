@@ -77,7 +77,7 @@
         ?>
         <i class="fas fa-laptop-code title_icon title_icon"></i>
         <h2><?php echo $term_obj->name; ?></h2>
-        <p class='work_text'>私が過去に制作した作品になります。</p>
+        <p class='work_text'><?php echo $term_obj->description; ?></p>
         <!-- 実績 -->
         <div class="web_works animated fadeInUp-box">
             <div class="d-md-flex justify-content-md-between site_items">
