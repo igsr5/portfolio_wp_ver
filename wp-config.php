@@ -25,7 +25,7 @@
 // を使用し、必ず UTF-8 の BOM なし (UTF-8N) で保存してください。
 
 // ** MySQL 設定 - この情報はホスティング先から入手してください。 ** //
-/** WordPress のためのデータベース名 */
+// /** WordPress のためのデータベース名 */
 // define( 'DB_NAME', 'bisquelizard14_portfolio' );
 
 // /** MySQL データベースのユーザー名 */
@@ -35,7 +35,7 @@
 // define( 'DB_PASSWORD', 'sora1220' );
 
 // /** MySQL のホスト名 */
-// define( 'DB_HOST', 'mysql1012.db.sakura.ne.jp' );
+// define( 'DB_HOST', 'mysql1019.db.sakura.ne.jp' );
 
 // /** データベースのテーブルを作成する際のデータベースの文字セット */
 // define( 'DB_CHARSET', 'utf8' );
