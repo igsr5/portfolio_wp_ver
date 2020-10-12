@@ -56,6 +56,10 @@ body {
     }
 }
 
+.mt17 {
+    margin-top: 17px;
+}
+
 // 画像を浮かせる
 .img_wrap {
     transition-duration: 0.5s;
@@ -86,6 +90,19 @@ body {
 .img_wrap:hover img {
     opacity: 0.6;
     transition-duration: 0.6s;
+}
+
+.more_works {
+    width: 90%;
+    margin: 0 auto;
+    text-align: right;
+}
+
+.more_works a {
+    color: #007bff;
+    &:hover {
+        color: #007bff;
+    }
 }
 
 // 共通ボタン
@@ -393,6 +410,11 @@ header {
     height: 40%;
 }
 
+.works-hero {
+    background-image: url("../img/background/hero_back_works.jpg"); // background-size: cover;
+    height: 40%;
+}
+
 
 /*===========================================================*/
 
@@ -532,10 +554,18 @@ header {
     }
     h2 {
         @include title;
+        margin-bottom: 30px;
     }
     .title_icon {
         @include title_icon;
     }
+}
+
+.work_text {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto 25px;
+    color: #888888;
 }
 
 // オリジナルサービス
@@ -586,7 +616,7 @@ header {
         }
         ;
     }
-    margin-bottom: 60px;
+    margin-bottom: 45px;
 }
 
 .service_about {
@@ -780,6 +810,25 @@ footer {
 }
 
 
+/*===========================================================*/
+
+
+/*= works一覧ページ　　                                      =*/
+
+
+/*===========================================================*/
+
+.site_items {
+    flex-wrap: wrap;
+}
+
+.work_title {
+    margin: 40px auto 30px;
+    text-align: center;
+    font-size: 28px;
+}
+
+
 /*===============================================================================*/
 
 
@@ -881,6 +930,9 @@ footer {
     .modal-dialog {
         width: 80%;
         margin: 30px auto;
+    }
+    .site-items {
+        margin-bottom: 20px;
     }
     .video-dialog {
         margin: 90px auto;

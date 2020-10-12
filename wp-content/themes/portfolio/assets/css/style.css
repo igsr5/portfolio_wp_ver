@@ -46,6 +46,10 @@ body {
   opacity: 0.6;
 }
 
+.mt17 {
+  margin-top: 17px;
+}
+
 .img_wrap {
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
@@ -81,6 +85,20 @@ body {
   opacity: 0.6;
   -webkit-transition-duration: 0.6s;
           transition-duration: 0.6s;
+}
+
+.more_works {
+  width: 90%;
+  margin: 0 auto;
+  text-align: right;
+}
+
+.more_works a {
+  color: #007bff;
+}
+
+.more_works a:hover {
+  color: #007bff;
 }
 
 .btn-box {
@@ -385,6 +403,11 @@ header ul li:hover {
   height: 40%;
 }
 
+.works-hero {
+  background-image: url("../img/background/hero_back_works.jpg");
+  height: 40%;
+}
+
 /*===========================================================*/
 /*= 自己紹介　　                                            =*/
 /*===========================================================*/
@@ -535,6 +558,7 @@ header ul li:hover {
   margin-bottom: 60px;
   font-size: 40px;
   font-family: "PT Serif", serif;
+  margin-bottom: 30px;
 }
 
 .works .title_icon {
@@ -543,6 +567,13 @@ header ul li:hover {
   font-size: 55px;
   margin: 0 0 -23px;
   opacity: 0.3;
+}
+
+.work_text {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto 25px;
+  color: #888888;
 }
 
 .web_service {
@@ -578,7 +609,7 @@ header ul li:hover {
 }
 
 .web_works {
-  margin-bottom: 60px;
+  margin-bottom: 45px;
 }
 
 .web_works h3 {
@@ -777,6 +808,20 @@ footer p {
   line-height: 40px;
 }
 
+/*===========================================================*/
+/*= works一覧ページ　　                                      =*/
+/*===========================================================*/
+.site_items {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.work_title {
+  margin: 40px auto 30px;
+  text-align: center;
+  font-size: 28px;
+}
+
 /*===============================================================================*/
 /*= width<768px以下の設定　　                                                   =*/
 /*===============================================================================*/
@@ -860,6 +905,9 @@ footer p {
   .modal-dialog {
     width: 80%;
     margin: 30px auto;
+  }
+  .site-items {
+    margin-bottom: 20px;
   }
   .video-dialog {
     margin: 90px auto;
