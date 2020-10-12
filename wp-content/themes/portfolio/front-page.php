@@ -82,8 +82,9 @@
         <div class="web_works animated fadeInUp-box">
             <div class="d-md-flex justify-content-md-between site_items">
                 <?php
-                $works_posts=get_category_posts(2);
-                while($works_posts->have_posts()):
+                $works_posts=get_category_posts(3);
+                if($works_posts->have_posts()):
+                for($i=0;$i<3;$i++):
                     $works_posts->the_post();
                 ?>
                 <div class="img_wrap">
@@ -91,7 +92,10 @@
                         <?php the_post_thumbnail(); ?>
                     </a>
                 </div>
-                <?php endwhile; ?>
+                <?php
+                endfor;
+                endif;
+                ?>
             </div>
             <div class='more_works' >
                 <a href="<?php echo esc_url(get_term_link($term_obj)); ?>">もっと見る</a>

@@ -46,6 +46,10 @@ body {
   opacity: 0.6;
 }
 
+.mt17 {
+  margin-top: 17px;
+}
+
 .img_wrap {
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
@@ -568,7 +572,7 @@ header ul li:hover {
 .work_text {
   text-align: center;
   width: 80%;
-  margin: 0 auto 40px;
+  margin: 0 auto 25px;
   color: #888888;
 }
 
