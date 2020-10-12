@@ -14,6 +14,17 @@ function get_child_pages($page_content){
 	return $children_array;
 }
 
+// カテゴリから投稿を取得
+function get_category_posts($number=-1){
+	$args=array(
+		'post_type'=>'post',
+		'category_name'=>'works',
+		'posts_per_pages'=>$number,
+	);
+	$works_posts=new WP_Query($args);
+	return $works_posts;
+}
+
 // get_the_contentなどのpタグを削除
 function remove_ptag($content){
 	$content=wp_strip_all_tags($content);

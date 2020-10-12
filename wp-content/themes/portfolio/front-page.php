@@ -81,18 +81,20 @@
         <!-- 実績 -->
         <div class="web_works animated fadeInUp-box">
             <div class="d-md-flex justify-content-md-between site_items">
-                <div class=" img_wrap">
-                    <a href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/img/site/portfolio.png" alt=""></a>
-                </div>
-                <div class=" img_wrap">
-                    <a href="https://ichigo-dev.github.io/dual_life_lp/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/site/dual_life_lp.png" alt=""></a>
-                </div>
+                <?php
+                $works_posts=get_category_posts(3);
+                while($works_posts->have_posts()):
+                    $works_posts->the_post();
+                ?>
                 <!-- <div class=" img_wrap coming-soon">
                     <p>coming soon</p>
                 </div> -->
                 <div class="img_wrap">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/site/gurusupo_hero.png" alt="" data-toggle="modal" data-target="#gurusupo_modal">
+                    <a href="<?php the_permalink(); ?>">
+                        <?php the_post_thumbnail(); ?>
+                    </a>
                 </div>
+                <?php endwhile; ?>
             </div>
             <div class='more_works' >
                 <a href="<?php echo esc_url(get_term_link($term_obj)); ?>">もっと見る</a>
