@@ -15,11 +15,12 @@ function get_child_pages($page_content){
 }
 
 // カテゴリから投稿を取得
-function get_category_posts($number=-1){
+function get_category_posts(){
 	$args=array(
 		'post_type'=>'post',
+		'nopaging'=>true,
 		'category_name'=>'works',
-		'posts_per_pages'=>$number,
+		'posts_per_pages'=> 3,
 	);
 	$works_posts=new WP_Query($args);
 	return $works_posts;

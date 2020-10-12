@@ -406,6 +406,11 @@ header {
     height: 40%;
 }
 
+.works-hero {
+    background-image: url("../img/background/hero_back_works.jpg"); // background-size: cover;
+    height: 40%;
+}
+
 
 /*===========================================================*/
 
@@ -798,6 +803,25 @@ footer {
         text-align: center;
         line-height: 40px;
     }
+}
+
+
+/*===========================================================*/
+
+
+/*= works一覧ページ　　                                      =*/
+
+
+/*===========================================================*/
+
+.site_items {
+    flex-wrap: wrap;
+}
+
+.work_title {
+    margin: 40px auto 30px;
+    text-align: center;
+    font-size: 28px;
 }
 
 

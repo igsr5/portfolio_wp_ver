@@ -82,13 +82,10 @@
         <div class="web_works animated fadeInUp-box">
             <div class="d-md-flex justify-content-md-between site_items">
                 <?php
-                $works_posts=get_category_posts(3);
+                $works_posts=get_category_posts(2);
                 while($works_posts->have_posts()):
                     $works_posts->the_post();
                 ?>
-                <!-- <div class=" img_wrap coming-soon">
-                    <p>coming soon</p>
-                </div> -->
                 <div class="img_wrap">
                     <a href="<?php the_permalink(); ?>">
                         <?php the_post_thumbnail(); ?>

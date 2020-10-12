@@ -97,4 +97,10 @@
             <h1>Contact</h1>
         </div>
     </div>
+    <?php elseif(is_category()): ?>
+    <div class="works-hero hero">
+        <div>
+            <h1>Works</h1>
+        </div>
+    </div>
     <?php endif; ?>
