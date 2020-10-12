@@ -34,6 +34,7 @@
     ?>
 
     <!--ヘッダー-->
+    <?php if(is_front_page()): ?>
     <header class="d-none d-md-block">
         <div class="container">
             <div class="row d-none d-md-flex">
@@ -43,12 +44,22 @@
                     <li class="skip_about">about</li>
                     <li class="skip_skill">skill</li>
                     <li class="skip_works">works</li>
-                    <li><a href='<?php the_permalink($contact_post_data->ID); ?>'>contact</a></li>
+                    <li><a href='<?php the_permalink($contact_page_data->ID); ?>'>contact</a></li>
                 </ul>
             </div>
         </div>
     </header>
+    <?php else: ?>
+    <header>
+        <div class="container">
+            <div class="row">
+                <h2 class="col-md-3"><a href='<?php echo home_url(); ?>'>portfolio</a></h2>
+            </div>
+        </div>
+    </header>
+    <?php endif; ?>
 
+    <?php if(is_front_page()): ?>
     <!--ナビゲーションメニュー-->
     <div class="navi_menu d-block d-md-none">
         <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
@@ -66,10 +77,11 @@
             <li class="skip_about">about</li>
             <li class="skip_skill">skill</li>
             <li class="skip_works">works</li>
-            <li><a href='<?php the_permalink($contact_post_data->ID); ?>'>contact</a></li>
+            <li><a href='<?php the_permalink($contact_page_data->ID); ?>'>contact</a></li>
+            <?php wp_reset_postdata(); ?>
         </ul>
     </nav>
-    <?php wp_reset_postdata(); ?>
+    <?php endif; ?>
 
     <!--ヒーローイメージ-->
 
