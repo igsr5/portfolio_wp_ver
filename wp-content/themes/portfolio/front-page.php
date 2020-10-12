@@ -142,7 +142,6 @@
     setup_postdata($post);
     $content=remove_ptag(get_the_content());
     ?>
-    ?>
     <div class="contact">
         <div class="container">
             <i class="far fa-envelope title_icon"></i>
