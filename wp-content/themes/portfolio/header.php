@@ -31,8 +31,8 @@
 <body>
     <?php
     $contact_page_data=get_page_by_path('contact');
+    $term_obj=get_term_by('slug','works','category');
     ?>
-
     <!--ヘッダー-->
     <?php if(is_front_page()): ?>
     <header class="d-none d-md-block">
@@ -43,7 +43,7 @@
                     <li class="skip_top">top</li>
                     <li class="skip_about">about</li>
                     <li class="skip_skill">skill</li>
-                    <li class="skip_works">works</li>
+                    <li><a href="<?php echo esc_url(get_term_link($term_obj)); ?>">works</a></li>
                     <li><a href='<?php the_permalink($contact_page_data->ID); ?>'>contact</a></li>
                 </ul>
             </div>
@@ -76,7 +76,7 @@
             <li class="skip_top">top</li>
             <li class="skip_about">about</li>
             <li class="skip_skill">skill</li>
-            <li class="skip_works">works</li>
+            <li><a href="<?php echo esc_url(get_term_link($term_obj)); ?>">works</a></li>
             <li><a href='<?php the_permalink($contact_page_data->ID); ?>'>contact</a></li>
             <?php wp_reset_postdata(); ?>
         </ul>
@@ -92,9 +92,9 @@
         </div>
     </div>
     <?php elseif(is_page('contact')): ?>
-        <div class="contact-hero hero">
-            <div>
-                <h1>Contact</h1>
-            </div>
+    <div class="contact-hero hero">
+        <div>
+            <h1>Contact</h1>
         </div>
+    </div>
     <?php endif; ?>

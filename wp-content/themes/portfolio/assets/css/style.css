@@ -93,6 +93,10 @@ body {
   color: #007bff;
 }
 
+.more_works a:hover {
+  color: #007bff;
+}
+
 .btn-box {
   cursor: pointer;
   display: block;
@@ -545,6 +549,7 @@ header ul li:hover {
   margin-bottom: 60px;
   font-size: 40px;
   font-family: "PT Serif", serif;
+  margin-bottom: 30px;
 }
 
 .works .title_icon {
@@ -553,6 +558,13 @@ header ul li:hover {
   font-size: 55px;
   margin: 0 0 -23px;
   opacity: 0.3;
+}
+
+.work_text {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto 40px;
+  color: #888888;
 }
 
 .web_service {

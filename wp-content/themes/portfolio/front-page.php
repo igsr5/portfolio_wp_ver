@@ -22,8 +22,7 @@
                     $children_array = get_child_pages($page_content);
                         while($children_array->have_posts()):
                             $children_array->the_post();
-                            $content=get_the_content();
-                            $content=remove_ptag($content);
+                            $content=remove_ptag(get_the_content());
                     ?>
                     <div class="status_item">
                         <p><?php the_title(); ?>：<?php echo $content; ?></p>
@@ -73,29 +72,32 @@
     <!--制作実績-->
     <div class="works">
         <div class="container">
-            <i class="fas fa-laptop-code title_icon title_icon"></i>
-            <h2>works</h2>
-            <!-- 実績 -->
-            <div class="web_works animated fadeInUp-box">
-                <h3>実績</h3>
-                <div class="d-md-flex justify-content-md-between site_items">
-                    <div class=" img_wrap">
-                        <a href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/img/site/portfolio.png" alt=""></a>
-                    </div>
-                    <div class=" img_wrap">
-                        <a href="https://ichigo-dev.github.io/dual_life_lp/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/site/dual_life_lp.png" alt=""></a>
-                    </div>
-                    <!-- <div class=" img_wrap coming-soon">
-                        <p>coming soon</p>
-                    </div> -->
-                    <div class="img_wrap">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/site/gurusupo_hero.png" alt="" data-toggle="modal" data-target="#gurusupo_modal">
-                    </div>
+        <?php
+        $term_obj=get_term_by('slug','works','category');
+        ?>
+        <i class="fas fa-laptop-code title_icon title_icon"></i>
+        <h2><?php echo $term_obj->name; ?></h2>
+        <p class='work_text'>私が過去に制作した作品になります。</p>
+        <!-- 実績 -->
+        <div class="web_works animated fadeInUp-box">
+            <div class="d-md-flex justify-content-md-between site_items">
+                <div class=" img_wrap">
+                    <a href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/img/site/portfolio.png" alt=""></a>
                 </div>
-                <div class='more_works' >
-                    <a href="">もっと見る</a>
+                <div class=" img_wrap">
+                    <a href="https://ichigo-dev.github.io/dual_life_lp/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/site/dual_life_lp.png" alt=""></a>
+                </div>
+                <!-- <div class=" img_wrap coming-soon">
+                    <p>coming soon</p>
+                </div> -->
+                <div class="img_wrap">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/site/gurusupo_hero.png" alt="" data-toggle="modal" data-target="#gurusupo_modal">
                 </div>
             </div>
+            <div class='more_works' >
+                <a href="<?php echo esc_url(get_term_link($term_obj)); ?>">もっと見る</a>
+            </div>
+        </div>
 
             <!--オリジナルウェブサービス-->
             <!-- <div class="web_service animated fadeInUp-box">

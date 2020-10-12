@@ -96,6 +96,9 @@ body {
 
 .more_works a {
     color: #007bff;
+    &:hover {
+        color: #007bff;
+    }
 }
 
 // 共通ボタン
@@ -542,10 +545,18 @@ header {
     }
     h2 {
         @include title;
+        margin-bottom: 30px;
     }
     .title_icon {
         @include title_icon;
     }
+}
+
+.work_text {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto 40px;
+    color: #888888;
 }
 
 // オリジナルサービス
