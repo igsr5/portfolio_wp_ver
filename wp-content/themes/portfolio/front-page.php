@@ -101,43 +101,9 @@
                 <a href="<?php echo esc_url(get_term_link($term_obj)); ?>">もっと見る</a>
             </div>
         </div>
-
-            <!--オリジナルウェブサービス-->
-            <!-- <div class="web_service animated fadeInUp-box">
-                <h3>オリジナルサービス</h3>
-                <div class="gurusupo row">
-                    <div class="service_top col-sm-6">
-                        <div class="img_wrap">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/site/gurusupo_hero.png" alt="" data-toggle="modal" data-target="#gurusupo_modal">
-                        </div>
-                        <p>現在の位置情報から周辺の飲食店を検索し、表示するグルメサイトです。サービス仕様、デザイン等全て自分で考えました。</p>
-                    </div>
-                    <div class="service_about col-sm-6 ">
-                        <h4 class="d-none d-sm-block">GURUSUPO</h4>
-                        <h5>使用開発環境</h5>
-                        <p>言語：HTML5,CSS,JavaScript</p>
-                        <p>フレームワーク：Vue.js</p>
-                        <p>ライブラリ：vue-paginate,vue-js-modal</p>
-                        <p>API：Google Map API,ぐるなびAPI</p>
-                        <p><a href="https://bisquelizard14.sakura.ne.jp/" target="_blank" rel="noopener noreferrer">サイトURL</a></p>
-                    </div>
-                </div>
-            </div> -->
             <p class="btn-box skip_contact">To contact</p>
         </div>
 
-
-
-        <!--モーダル-->
-        <div class="modal fade" id="gurusupo_modal" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog video-dialog" role="document">
-                <div class="modal-content">
-                    <video src="<?php echo get_template_directory_uri(); ?>/assets/video/gurusupo.mp4" controls playsinline preload="none" width="100%"></video>
-                </div>
-                <p>※再生ボタンを押すと再生されます</p>
-                <p>※コンテンツの読み込みに時間がかかる可能性があります</p>
-            </div>
-        </div>
 
     </div>
 

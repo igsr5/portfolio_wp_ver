@@ -398,6 +398,33 @@ header ul li:hover {
   font-family: "Kalam", cursive;
 }
 
+.bread_crumb {
+  margin: 15px 0 0;
+}
+
+.bread_crumb ul {
+  list-style: none;
+}
+
+.bread_crumb li {
+  display: inline-block;
+}
+
+.bread_crumb li :not(first-child):after {
+  margin-left: 5px;
+  content: '>';
+}
+
+.bread_crumb a {
+  color: #979595;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.bread_crumb a:hover {
+  color: #555555;
+}
+
 .contact-hero {
   background-image: url("../img/background/hero_back_contct.jpg");
   height: 40%;
@@ -599,7 +626,9 @@ header ul li:hover {
 
 .service_top img {
   width: 100%;
+  max-height: 270px;
   border-radius: 10px;
+  border: solid 1px #cfcece;
 }
 
 .service_top p {
@@ -636,6 +665,10 @@ header ul li:hover {
   padding: 10px 0;
   border-top: 1px solid #888888;
   font-family: "Noto Sans JP", sans-serif;
+}
+
+.service_about a {
+  color: #007bff;
 }
 
 .web_site h3 {
@@ -686,37 +719,6 @@ header ul li:hover {
   margin: 0;
   color: #ffffff;
   font-size: 24px;
-}
-
-.modal {
-  padding-right: 0;
-  z-index: 10001;
-}
-
-.modal p {
-  color: white;
-}
-
-.modal-dialog {
-  position: relative;
-  margin: 30px auto;
-}
-
-.modal-dialog i {
-  color: #4a4a4a;
-  position: absolute;
-  top: -13px;
-  right: -13px;
-  font-size: 40px;
-  z-index: 1;
-}
-
-.modal-body {
-  padding: 0;
-}
-
-.video-dialog {
-  margin: 0 auto;
 }
 
 /*===========================================================*/
@@ -794,7 +796,7 @@ form button {
 }
 
 /*===========================================================*/
-/*= フッター　　                                            =*/
+/*= フッター                                                =*/
 /*===========================================================*/
 footer {
   height: 40px;
@@ -809,7 +811,7 @@ footer p {
 }
 
 /*===========================================================*/
-/*= works一覧ページ　　                                      =*/
+/*= works一覧ページ                                         =*/
 /*===========================================================*/
 .site_items {
   -ms-flex-wrap: wrap;
@@ -822,8 +824,16 @@ footer p {
   font-size: 28px;
 }
 
+/*===========================================================*/
+/*= work投稿ページ                                          =*/
+/*===========================================================*/
+.work_content {
+  margin: 50px auto;
+  position: relative;
+}
+
 /*===============================================================================*/
-/*= width<768px以下の設定　　                                                   =*/
+/*= width<768px以下の設定                                                        =*/
 /*===============================================================================*/
 @media (max-width: 767px) {
   .about img {
@@ -864,7 +874,7 @@ footer p {
 }
 
 /*===============================================================================*/
-/*= width<576px以下の設定　　                                                   =*/
+/*= width<576px以下の設定                                                       =*/
 /*===============================================================================*/
 @media (max-width: 576px) {
   .hero {
@@ -888,7 +898,7 @@ footer p {
     margin: 0 auto;
   }
   .service_top {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
   }
   .service_top div {
@@ -899,7 +909,7 @@ footer p {
     margin-bottom: 20px;
   }
   .service_about {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
   }
   .modal-dialog {

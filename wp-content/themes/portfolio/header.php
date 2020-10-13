@@ -97,10 +97,18 @@
             <h1>Contact</h1>
         </div>
     </div>
-    <?php elseif(is_category()): ?>
+    <?php elseif(is_category() || is_single()): ?>
     <div class="works-hero hero">
         <div>
             <h1>Works</h1>
         </div>
     </div>
     <?php endif; ?>
+
+    <div class="bread_crumb">
+        <?php
+    if(function_exists('bread_crumb') && !is_front_page()){
+        bread_crumb();
+    }
+    ?>
+    </div>
