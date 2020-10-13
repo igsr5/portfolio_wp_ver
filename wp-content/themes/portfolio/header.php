@@ -88,7 +88,7 @@
     <?php if(is_front_page()): ?>
     <div class="hero">
         <div>
-            <h1>Welcome to my portfolio!!</h1>
+            <h1 class="animated fadeIn">Welcome to my portfolio!!</h1>
         </div>
     </div>
     <?php elseif(is_page('contact')): ?>
