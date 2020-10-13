@@ -104,3 +104,11 @@
         </div>
     </div>
     <?php endif; ?>
+
+    <div class="bread_crumb">
+        <?php
+    if(function_exists('bread_crumb') && !is_front_page()){
+        bread_crumb();
+    }
+    ?>
+    </div>

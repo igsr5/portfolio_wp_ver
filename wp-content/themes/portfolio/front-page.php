@@ -105,18 +105,6 @@
         </div>
 
 
-
-        <!--モーダル-->
-        <div class="modal fade" id="gurusupo_modal" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog video-dialog" role="document">
-                <div class="modal-content">
-                    <video src="<?php echo get_template_directory_uri(); ?>/assets/video/gurusupo.mp4" controls playsinline preload="none" width="100%"></video>
-                </div>
-                <p>※再生ボタンを押すと再生されます</p>
-                <p>※コンテンツの読み込みに時間がかかる可能性があります</p>
-            </div>
-        </div>
-
     </div>
 
 

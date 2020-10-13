@@ -405,6 +405,30 @@ header {
     }
 }
 
+// パンくずリスト
+.bread_crumb {
+    margin: 15px 0 0;
+    ul {
+        list-style: none;
+    }
+    li {
+        display: inline-block;
+    }
+    li :not(first-child) {
+        &:after {
+            margin-left: 5px;
+            content: '>';
+        }
+    }
+    a {
+        color: #979595;
+        transition: .3s;
+        &:hover {
+            color: #555555;
+        }
+    }
+}
+
 .contact-hero {
     background-image: url("../img/background/hero_back_contct.jpg"); // background-size: cover;
     height: 40%;
@@ -593,7 +617,9 @@ header {
     }
     img {
         width: 100%;
+        max-height: 270px;
         border-radius: 10px;
+        border: solid 1px #cfcece;
     }
     p {
         width: 85%;
@@ -696,36 +722,6 @@ header {
     }
 }
 
-// モーダル
-.modal {
-    padding-right: 0;
-    z-index: 10001;
-    p {
-        color: white;
-    }
-}
-
-.modal-dialog {
-    position: relative;
-    margin: 30px auto;
-    i {
-        color: #4a4a4a;
-        position: absolute;
-        top: -13px;
-        right: -13px;
-        font-size: 40px;
-        z-index: 1;
-    }
-}
-
-.modal-body {
-    padding: 0;
-}
-
-.video-dialog {
-    margin: 0 auto;
-}
-
 
 /*===========================================================*/
 
@@ -796,7 +792,7 @@ form {
 /*===========================================================*/
 
 
-/*= フッター　　                                            =*/
+/*= フッター                                                =*/
 
 
 /*===========================================================*/
@@ -816,7 +812,7 @@ footer {
 /*===========================================================*/
 
 
-/*= works一覧ページ　　                                      =*/
+/*= works一覧ページ                                         =*/
 
 
 /*===========================================================*/
@@ -835,21 +831,21 @@ footer {
 /*===========================================================*/
 
 
-/*= work投稿ページ　　                                      =*/
+/*= work投稿ページ                                          =*/
 
 
 /*===========================================================*/
 
 .work_content {
     margin: 50px auto;
-    display: flex;
+    position: relative;
 }
 
 
 /*===============================================================================*/
 
 
-/*= width<768px以下の設定　　                                                   =*/
+/*= width<768px以下の設定                                                        =*/
 
 
 /*===============================================================================*/
@@ -901,7 +897,7 @@ footer {
 /*===============================================================================*/
 
 
-/*= width<576px以下の設定　　                                                   =*/
+/*= width<576px以下の設定                                                       =*/
 
 
 /*===============================================================================*/
@@ -930,7 +926,7 @@ footer {
         }
     }
     .service_top {
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
         div {
             width: 100%;
@@ -941,7 +937,7 @@ footer {
         }
     }
     .service_about {
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
     }
     .modal-dialog {

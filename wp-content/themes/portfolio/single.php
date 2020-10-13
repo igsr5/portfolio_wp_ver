@@ -1,24 +1,27 @@
-<?php get_header(); ?>
-
-<!--オリジナルウェブサービス-->
+<?php
+get_header();
+$term_obj=get_term_by('slug','works','category');
+if(have_posts()):
+while(have_posts()):the_post();
+?>
+<!--実績詳細部分-->
 <div class="web_service">
-    <!-- <h3>オリジナルサービス</h3> -->
-    <div class="work_content" row">
+    <div class="work_content d-md-flex d-block" row">
         <div class="service_top col-sm-6">
-            <div class="img_wrap">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/site/gurusupo_hero.png" alt="" data-toggle="modal" data-target="#gurusupo_modal">
+            <div>
+            <?php the_post_thumbnail(); ?>
             </div>
-            <p>現在の位置情報から周辺の飲食店を検索し、表示するグルメサイトです。サービス仕様、デザイン等全て自分で考えました。</p>
+            <p><?php the_excerpt(); ?></p>
         </div>
         <div class="service_about col-sm-6 ">
-            <h4 class="d-none d-sm-block">GURUSUPO</h4>
-            <h5>使用開発環境</h5>
-            <p>言語：HTML5,CSS,JavaScript</p>
-            <p>フレームワーク：Vue.js</p>
-            <p>ライブラリ：vue-paginate,vue-js-modal</p>
-            <p>API：Google Map API,ぐるなびAPI</p>
-            <p><a href="https://bisquelizard14.sakura.ne.jp/" target="_blank" rel="noopener noreferrer">サイトURL</a></p>
+            <?php the_content(); ?>
         </div>
     </div>
+
 </div>
-<?php get_footer(); ?>
+
+<?php
+endwhile;
+endif;
+get_footer();
+?>
