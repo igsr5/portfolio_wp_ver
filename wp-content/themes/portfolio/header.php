@@ -97,7 +97,7 @@
             <h1>Contact</h1>
         </div>
     </div>
-    <?php elseif(is_category()): ?>
+    <?php elseif(is_category() || is_single()): ?>
     <div class="works-hero hero">
         <div>
             <h1>Works</h1>
