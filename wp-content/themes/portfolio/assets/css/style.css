@@ -638,6 +638,10 @@ header ul li:hover {
   font-family: "Noto Sans JP", sans-serif;
 }
 
+.service_about a {
+  color: #007bff;
+}
+
 .web_site h3 {
   text-align: center;
   font-family: "Noto Sans JP", sans-serif;
@@ -820,6 +824,16 @@ footer p {
   margin: 40px auto 30px;
   text-align: center;
   font-size: 28px;
+}
+
+/*===========================================================*/
+/*= work投稿ページ　　                                      =*/
+/*===========================================================*/
+.work_content {
+  margin: 50px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 /*===============================================================================*/

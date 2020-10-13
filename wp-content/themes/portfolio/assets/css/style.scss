@@ -644,6 +644,9 @@ header {
             family: $jp-title-font;
         }
     }
+    a {
+        color: #007bff;
+    }
 }
 
 // サイト
@@ -826,6 +829,20 @@ footer {
     margin: 40px auto 30px;
     text-align: center;
     font-size: 28px;
+}
+
+
+/*===========================================================*/
+
+
+/*= work投稿ページ　　                                      =*/
+
+
+/*===========================================================*/
+
+.work_content {
+    margin: 50px auto;
+    display: flex;
 }
 
 
