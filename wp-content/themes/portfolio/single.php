@@ -7,17 +7,16 @@ while(have_posts()):the_post();
 <!--実績詳細部分-->
 <div class="web_service">
     <div class="work_content d-md-flex d-block" row">
-        <div class="service_top col-sm-6">
-            <div>
+            <div class="service_top col-md-6">
+                <div>
             <?php the_post_thumbnail(); ?>
-            </div>
+                </div>
             <p><?php the_excerpt(); ?></p>
-        </div>
-        <div class="service_about col-sm-6 ">
+            </div>
+            <div class="service_about col-md-6 ">
             <?php the_content(); ?>
-        </div>
+            </div>
     </div>
-
 </div>
 
 <?php

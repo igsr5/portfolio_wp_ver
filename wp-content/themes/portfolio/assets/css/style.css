@@ -841,6 +841,14 @@ footer p {
   .skill .skill_item div {
     height: 120px;
   }
+  .service_top {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .service_about {
+    width: 90%;
+    margin: 0 auto;
+  }
   .site_items div {
     width: 80%;
     margin: 0 auto 15px;
@@ -899,13 +907,12 @@ footer p {
     width: 100%;
     margin-bottom: 20px;
   }
+  .service_top img {
+    height: 190px;
+  }
   .service_about {
     width: 90%;
     margin: 0 auto;
-  }
-  .modal-dialog {
-    width: 80%;
-    margin: 30px auto;
   }
   .site-items {
     margin-bottom: 20px;
