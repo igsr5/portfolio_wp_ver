@@ -9,6 +9,7 @@ function get_child_pages($page_content){
 		'post_status' => 'publish',
 		'post_type'   => 'page',
 		'order'=>'ASC',
+    'posts_per_page' => -1
 	);
 	$children_array = new WP_Query($args);
 	return $children_array;

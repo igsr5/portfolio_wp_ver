@@ -480,7 +480,7 @@ header ul li:hover {
   font-size: 30px;
   -webkit-transition: .5s;
   transition: .5s;
-  margin-left: 40px;
+  margin-left: 20px;
 }
 
 .about .name_title a:hover {

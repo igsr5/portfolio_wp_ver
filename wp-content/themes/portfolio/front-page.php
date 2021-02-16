@@ -16,6 +16,7 @@
                     <div class="name_title">
                         <p>市古空/ICHIGO SORA</p>
                         <a href="https://twitter.com/nira_22222"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://github.com/Ichigo-dev"><i class="fab fa-github"></i></i></a>
                     </div>
                     <?php
                     wp_reset_postdata();
@@ -58,7 +59,7 @@
                 ?>
                 <div class="skill_item col-sm-3 col-6 wow animated fadeInUp-box" data-wow-delay=".<?php echo $i; ?>s">
                     <div>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo/<?php echo $content; ?>" alt="<?php the_title(); ?>">
+                        <img src="<?php echo $content; ?>" alt="<?php the_title(); ?>">
                     </div>
                     <p><?php the_title(); ?></p>
                 </div>
